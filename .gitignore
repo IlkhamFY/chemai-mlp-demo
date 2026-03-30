@@ -1,7 +1,78 @@
-node_modules/
-dist/
-.env
-__pycache__/
-*.pyc
-.venv/
+# -----------------------------
+# OS and editor noise
+# -----------------------------
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# -----------------------------
+# Environment and secrets
+# -----------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# -----------------------------
+# Python artifacts
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# -----------------------------
+# Node.js artifacts
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+coverage/
+.next/
+.nuxt/
+.cache/
+
+# -----------------------------
+# ML and data artifacts
+# -----------------------------
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.joblib
+*.pkl
+*.npz
+*.npy
+data/
+datasets/
+runs/
+wandb/
+mlruns/
+
+# -----------------------------
+# Compressed / archive files
+# -----------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
